@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Float and align</title>
+</head>
+<style>
+  *{
+    /* to remove padding */
+    box-sizing:border-box;
+  }
+  body{
+    font-family:'Courier New', Courier, monospace
+    
+  }
+
+  .box{
+    background:cadetblue;
+    border:1px solid black;
+    padding:20px;
+    margin-bottom:15px;
+  }
+  .box p{
+    text-align:right;
+    text-align:center;
+    text-align:justify;
+  }
+.container{
+  /* always use on contents */
+  max-width:960px;
+  margin:30px auto;
+}
+.clr{
+  clear:both;
+}
+
+#box2{
+  float:left;
+  width:70%;/* container ko total size=100%*/
+}
+#box3{
+  float:right;
+  width:30%;/* container ko total size=100%*/
+
+}
+</style>
+<body>
+  <div class="container">
+      <div id="box1"class="box">
+          <h3>Heading</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab rem sequi doloribus repudiandae voluptas, natus cumque esse libero est doloremque!</p>
+        </div>
+        <div id="box2"class="box">
+            <h3>Heading</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab rem sequi doloribus repudiandae voluptas, natus cumque esse libero est doloremque!</p>
+          </div>
+          <div id="box3"class="box">
+              <h3>Heading</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab rem sequi doloribus repudiandae voluptas, natus cumque esse libero est doloremque!</p>
+            </div>
+
+            <!-- clear class for box2 and 3 for using float property -->
+            <div class="clr">
+              
+            </div>
+            
+            <div id="box4"class="box">
+                <h3>Heading</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab rem sequi doloribus repudiandae voluptas, natus cumque esse libero est doloremque!</p>
+              </div>
+        
+  </div>
+  
+</body>
+</html>

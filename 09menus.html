@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Menus Styling</title>
+</head>
+<style>
+  body{
+    font-family:'Courier New', Courier, monospace;
+  }
+  /* Nav bar ->horizontal*/
+  .navbar{
+    list-style:none;
+    margin:0;
+    padding:0;
+    background:#4c6ca0;
+    border-radius:5px;
+    overflow: auto; /*keeps the background when float is used*/
+  }
+  .navbar li{
+    float:left;
+
+  }
+  .navbar li a{
+    color:#fff;
+    text-decoration:none;
+    display:block;
+    padding:15px 20px;
+
+  }
+  .navbar li a:hover{
+    background-color:gray;
+    color:#f4f4f4;
+
+  }
+  /* sidemenu -> vertical */
+  .side-menu{
+    /* list-style:none; */
+    border:1px #ddd solid;
+    border-radius:10px;
+    width:300px;
+    padding:20px;
+  }
+  .side-menu ul{
+    list-style:none;
+  }
+  /* classname sabai ma same*/
+  .side-menu li{
+    list-style:none;
+    font-size:18px;
+    line-height: 2.4em;
+  }
+  /* pseudo selectors */
+  .side-menu li:last-child{
+    border:none;
+  }
+  .side-menu li a{
+    color:#333;
+    text-decoration:none;
+
+  }
+  .side-menu li a:hover{
+    color:crimson;
+  }
+
+</style>
+<body>
+    <ul class="navbar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+<ul class="side-menu">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">About Us</a></li>
+  <li><a href="#">Contact Us</a></li>
+</ul>
+  
+</body>
+</html>

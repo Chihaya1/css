@@ -1,0 +1,30 @@
+/* .is for classes */
+/* h2{
+  color:green;
+  font-family:serif;
+} */
+/* # = id */
+#welcome{
+  background-color: #f4f4f4;
+}
+/* Multiple Selectors */
+/* #welcome,#about{
+
+ } */
+
+ /* Nested selectors */
+ #welcome p{
+font-size:50px;
+ }
+ /* colors */
+ h1{
+   color:blueviolet;
+ }
+/* rgb */
+ h2{
+   color:rgb(50,0,50);
+ }
+ /* Hex */
+ h3{
+   color:#ff0fff;
+ }
